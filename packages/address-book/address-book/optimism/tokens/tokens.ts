@@ -1341,6 +1341,48 @@ const _tokens = {
     documentation: 'https://docs.frax.finance/frax-v3/sfrax',
     bridge: 'frax',
   },
+  msETH: {
+    name: 'Metronome ETH',
+    symbol: 'msETH',
+    oracleId: 'msETH',
+    address: '0x1610e3c85dd44Af31eD7f33a63642012Dca0C5A5',
+    chainId: 10,
+    decimals: 18,
+    logoURI: '',
+    website: 'https://app.metronome.io/op',
+    description:
+      'Metronome ETH (msETH) is a synthetic ETH derivative that is collateralized by the Metronome protocol. Metronome is a complete synthetic protocol that enables users to generate a variety of synthetics using crypto assets as collateral.',
+    documentation: 'https://docs.metronome.io/',
+    bridge: 'native',
+  },
+  msOP: {
+    name: 'Metronome OP',
+    symbol: 'msOP',
+    oracleId: 'msOP',
+    address: '0x33bCa143d9b41322479E8d26072a00a352404721',
+    chainId: 10,
+    decimals: 18,
+    logoURI: '',
+    website: 'https://app.metronome.io/op',
+    description:
+      'Metronome OP (msOP) is a synthetic OP derivative that is collateralized by the Metronome protocol. Metronome is a complete synthetic protocol that enables users to generate a variety of synthetics using crypto assets as collateral.',
+    documentation: 'https://docs.metronome.io/',
+    bridge: 'native',
+  },
+  msUSD: {
+    name: 'Metronome USD',
+    symbol: 'msUSD',
+    oracleId: 'msUSD',
+    address: '0x9dAbAE7274D28A45F0B65Bf8ED201A5731492ca0',
+    chainId: 10,
+    decimals: 18,
+    logoURI: '',
+    website: 'https://app.metronome.io/op',
+    description:
+      'Metronome USD (msUSD) is a synthetic USD stablecoin derivative that is collateralized by the Metronome protocol. Metronome is a complete synthetic protocol that enables users to generate a variety of synthetics using crypto assets as collateral.',
+    documentation: 'https://docs.metronome.io/',
+    bridge: 'native',
+  },
 } as const;
 
 export const tokens: ConstRecord<typeof _tokens, Token> = _tokens;
